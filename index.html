@@ -4,32 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food delivery store</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/newStyle.css" />
   </head>
   <body>
     <header class="header">
       <div class="header__left-block">
         <div class="header__logo">
-          <img src="icons/logo.svg" alt="Логотип" />
+          <img src="src/img/icons/logo.svg" alt="Логотип" />
         </div>
-        <nav class="header__links">
-          <a href="#" class="header__link">Доставка питания</a>
-          <a href="#" class="header__link">Второй пункт</a>
-        </nav>
       </div>
       <div class="header__right-block">
         <button class="btn__connect btn btn_white">Связаться с нами</button>
       </div>
     </header>
+
     <div class="sidepanel">
       <div class="sidepanel__text"><span>Социальные сети</span></div>
       <div class="sidepanel__divider"></div>
       <a href="#" class="sidepanel__icon">
-        <img src="icons/instagram.svg" alt="instagram" />
+        <img src="src/img/icons/instagram.svg" alt="instagram" />
       </a>
       <a href="#" class="sidepanel__icon">
-        <img src="icons/facebook.svg" alt="facebook" />
+        <img src="src/img/icons/facebook.svg" alt="facebook" />
       </a>
     </div>
 
@@ -38,7 +33,7 @@
       <div class="container">
         <div class="tabcontainer">
           <div class="tabcontent">
-            <img src="img/tabs/vegy.jpg" alt="vegy" />
+            <img src="src/img/tabs/vegy.jpg" alt="vegy" />
             <div class="tabcontent__descr">
               Меню "Фитнес" - это новый подход к приготовлению блюд: больше
               свежих овощей и фруктов. Для людей, которые интересуются спортом;
@@ -47,7 +42,7 @@
             </div>
           </div>
           <div class="tabcontent">
-            <img src="img/tabs/elite.jpg" alt="elite" />
+            <img src="src/img/tabs/elite.jpg" alt="elite" />
             <div class="tabcontent__descr">
               Меню “Премиум” - мы используем не только красивый дизайн упаковки,
               но и качественное исполнение блюд. Красная рыба, морепродукты,
@@ -55,7 +50,7 @@
             </div>
           </div>
           <div class="tabcontent">
-            <img src="img/tabs/post.jpg" alt="post" />
+            <img src="src/img/tabs/post.jpg" alt="post" />
             <div class="tabcontent__descr">
               Наше специальное “Постное меню” - это тщательный подбор
               ингредиентов: полное отсутствие продуктов животного происхождения.
@@ -64,7 +59,7 @@
             </div>
           </div>
           <div class="tabcontent">
-            <img src="img/tabs/vegy.jpg" alt="vegy" />
+            <img src="src/img/tabs/vegy.jpg" alt="vegy" />
             <div class="tabcontent__descr">
               Меню "Сбалансированное" - это соответствие вашего рациона всем
               научным рекомендациям. Мы тщательно просчитываем вашу потребность
@@ -123,27 +118,27 @@
         <div class="offer__slider">
           <div class="offer__slider-counter">
             <div class="offer__slider-prev">
-              <img src="icons/left.svg" alt="prev" />
+              <img src="src/img/icons/left.svg" alt="prev" />
             </div>
             <span id="current">03</span>
             /
             <span id="total">04</span>
             <div class="offer__slider-next">
-              <img src="icons/right.svg" alt="next" />
+              <img src="src/img/icons/right.svg" alt="next" />
             </div>
           </div>
           <div class="offer__slider-wrapper">
             <div class="offer__slide">
-              <img src="img/slider/pepper.jpg" alt="pepper" />
+              <img src="src/img/slider/pepper.jpg" alt="pepper" />
             </div>
             <div class="offer__slide">
-              <img src="img/slider/food-12.jpg" alt="food" />
+              <img src="src/img/slider/food-12.jpg" alt="food" />
             </div>
             <div class="offer__slide">
-              <img src="img/slider/olive-oil.jpg" alt="oil" />
+              <img src="src/img/slider/olive-oil.jpg" alt="oil" />
             </div>
             <div class="offer__slide">
-              <img src="img/slider/paprika.jpg" alt="paprika" />
+              <img src="src/img/slider/paprika.jpg" alt="paprika" />
             </div>
           </div>
         </div>
@@ -152,80 +147,73 @@
 
     <div class="divider"></div>
 
-    <div class="calculating">
+    <div class="calculator">
       <div class="container">
         <h2 class="title">Рассчитаем вашу потребность в калориях?</h2>
-        <div class="calculating__field">
-          <div class="calculating__subtitle">Ваш пол</div>
-          <div class="calculating__choose" id="gender">
+        <div class="calculator__field">
+          <div class="calculator__subtitle">Ваш пол</div>
+          <div class="calculator__choose" id="gender">
             <div
               data-gender="Woman"
-              class="calculating__choose-item calculating__choose-item_active"
+              class="calculator__choose-item calculator__choose-item_active"
             >
               Женщина
             </div>
-            <div data-gender="Man" class="calculating__choose-item">
-              Мужчина
-            </div>
+            <div data-gender="Man" class="calculator__choose-item">Мужчина</div>
           </div>
 
-          <div class="calculating__subtitle">Ваша конституция</div>
-          <div class="calculating__choose calculating__choose_medium">
+          <div class="calculator__subtitle">Ваша конституция</div>
+          <div class="calculator__choose calculator__choose_medium">
             <input
               name="height"
               type="text"
               id="height"
               placeholder="Введите рост"
-              class="calculating__choose-item"
+              class="calculator__choose-item"
             />
             <input
               name="weight"
               type="text"
               id="weight"
               placeholder="Введите вес"
-              class="calculating__choose-item"
+              class="calculator__choose-item"
             />
             <input
               name="age"
               type="text"
               id="age"
               placeholder="Введите возраст"
-              class="calculating__choose-item"
+              class="calculator__choose-item"
             />
           </div>
 
-          <div class="calculating__subtitle">
+          <div class="calculator__subtitle">
             Выберите вашу физическая активность
           </div>
-          <div
-            class="calculating__choose calculating__choose_big"
-            id="activity"
-          >
-            <div data-ratio="1.2" id="low" class="calculating__choose-item">
+          <div class="calculator__choose calculator__choose_big" id="activity">
+            <div data-ratio="1.2" id="low" class="calculator__choose-item">
               Низкая активность
             </div>
             <div
               data-ratio="1.375"
               id="small"
-              class="calculating__choose-item calculating__choose-item_active"
+              class="calculator__choose-item calculator__choose-item_active"
             >
               Невысокая активность
             </div>
-            <div data-ratio="1.55" id="medium" class="calculating__choose-item">
+            <div data-ratio="1.55" id="medium" class="calculator__choose-item">
               Умеренная активность
             </div>
-            <div data-ratio="1.725" id="high" class="calculating__choose-item">
+            <div data-ratio="1.725" id="high" class="calculator__choose-item">
               Высокая активность
             </div>
           </div>
 
-          <div class="calculating__divider"></div>
+          <div class="calculator__divider"></div>
 
-          <div class="calculating__total">
-            <div class="calculating__subtitle">
-              Ваша суточная норма калорий:
-            </div>
-            <div class="calculating__result"><span>0</span> ккал</div>
+          <div class="calculator__total">
+            <div class="calculator__subtitle">Ваша суточная норма калорий:</div>
+            <div class="calculator__result"><span>0</span> ккал</div>
           </div>
         </div>
       </div>
@@ -246,7 +234,6 @@
         <div class="title">Заказывай пробный день прямо сейчас!</div>
         <form action="#" class="order__form">
           <input
-            tabindex="1"
             required
             placeholder="Ваше имя"
             name="name"
@@ -254,17 +241,14 @@
             class="order__input"
           />
           <input
-            tabindex="2"
             required
             placeholder="Ваш номер телефона"
             name="phone"
             type="phone"
             class="order__input"
           />
-          <img src="icons/right.svg" alt="right" />
-          <button tabindex="3" class="btn btn_dark btn_min">
-            Перезвонить мне
-          </button>
+          <img src="src/img/icons/right.svg" alt="right" />
+          <button class="btn btn_dark btn_min">Перезвонить мне</button>
         </form>
       </div>
     </div>
@@ -318,7 +302,7 @@
           <a href="#" class="link">facebook</a>
         </div>
         <div class="pepper">
-          <img src="icons/veg.svg" alt="pepper" />
+          <img src="src/img/icons/veg.svg" alt="pepper" />
         </div>
         <div class="call">
           <div class="subtitle">Или позвоните нам</div>
@@ -337,7 +321,6 @@
               Мы свяжемся с вами как можно быстрее!
             </div>
             <input
-              tabindex="1"
               required
               placeholder="Ваше имя"
               name="name"
@@ -345,14 +328,13 @@
               class="modal__input"
             />
             <input
-              tabindex="2"
               required
               placeholder="Ваш номер телефона"
               name="phone"
               type="phone"
               class="modal__input"
             />
-            <button tabindex="3" class="btn btn_dark btn_min btn__connect">
+            <button class="btn btn_dark btn_min btn__connect">
               Перезвонить мне
             </button>
           </form>
@@ -360,6 +342,6 @@
       </div>
     </div>
 
-    <script src="../dist/js/bundle.js"></script>
+    <script src="/dist/bundle.js"></script>
   </body>
 </html>

@@ -1,0 +1,80 @@
+.menu {
+  padding: 40px 0 50px 0;
+}
+
+.menu .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu .title {
+  text-align: center;
+}
+
+.menu__field {
+  margin-top: 50px;
+  padding: 50px 0;
+  width: 100%;
+  background: rgba(249, 254, 126, 0.25);
+}
+
+.menu__field .container {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu__item {
+  width: 320px;
+  min-height: 450px;
+  background: #fff;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  font-weight: 300;
+  transition: all 0.1s linear;
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+.menu__item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.menu__item-subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  padding: 0 20px;
+  margin-top: 20px;
+  pointer-events: none;
+}
+
+.menu__item-descr {
+  min-height: 136px;
+  margin-top: 20px;
+  padding: 0 20px;
+  pointer-events: none;
+}
+
+.menu__item-divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.25);
+  margin-top: 40px;
+  pointer-events: none;
+}
+
+.menu__item-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  pointer-events: none;
+}
+
+.menu__item-price span {
+  font-size: 24px;
+  font-weight: 700;
+  pointer-events: none;
+}

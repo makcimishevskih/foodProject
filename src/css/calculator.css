@@ -1,0 +1,131 @@
+.calculator {
+  padding: 50px 0;
+}
+
+.calculator .title {
+  text-align: center;
+}
+
+.calculator__field {
+  width: 100%;
+
+  margin-top: 50px;
+
+  background: rgba(146, 242, 255, 0.15);
+  padding: 30px 0 40px 0;
+}
+
+.calculator__subtitle {
+  margin-top: 30px;
+
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.calculator__subtitle:first-child {
+  margin-top: 0;
+}
+
+.calculator #gender:after {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 16px;
+  height: 16px;
+
+  background: url("/src/img/icons/switch.svg") center center/cover no-repeat;
+}
+
+.calculator__choose {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+
+  gap: 20px;
+  margin-top: 30px;
+}
+
+#gender.calculator__choose {
+  gap: 0;
+}
+
+.calculator__choose-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 170px;
+  height: 50px;
+
+  padding: 0 10px;
+
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+
+  transition: 0.3s all;
+}
+
+.calculator__choose > input:focus {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.calculator__choose-item:hover:not(.calculator__choose-item_active) {
+  background-color: rgba(84, 237, 57, 0.1);
+}
+
+.calculator__choose-item_active {
+  color: #fff;
+  background-color: #54ed39;
+}
+
+.calculator__choose_medium {
+  width: 743px;
+  margin: 30px auto 0 auto;
+}
+
+.calculator__choose_big {
+  width: 930px;
+
+  margin: 30px auto 0 auto;
+}
+
+.calculator__choose_big .calculator__choose-item {
+  width: 200px;
+}
+
+.calculator__divider {
+  width: 490px;
+  height: 1px;
+
+  margin: 40px auto;
+
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.calculator__total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 490px;
+
+  margin: 0 auto;
+}
+
+.calculator__result {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.calculator__result span {
+  font-size: 42px;
+}
