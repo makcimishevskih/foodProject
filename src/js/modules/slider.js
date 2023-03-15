@@ -1,4 +1,5 @@
-import { getZero, removeClassFromArr } from "./additionalFunctions.js";
+import { getZero, removeClassFromArr } from "../utils/helpers/helpers.js";
+
 const slider = () => {
   const slider = document.querySelector(".offer__slider");
   const sliderWrapper = document.querySelector(".offer__slider-wrapper");

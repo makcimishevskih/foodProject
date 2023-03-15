@@ -1,4 +1,4 @@
-import { removeClassFromArr } from "./additionalFunctions.js";
+import { removeClassFromArr } from "../utils/helpers/helpers.js";
 
 const calculator = () => {
   const bodySize = document.querySelectorAll(
@@ -44,6 +44,7 @@ const calculator = () => {
 
   window.addEventListener("click", (e) => {
     const t = e.target;
+
     if (
       t.closest("#activity") &&
       t.classList.contains("calculator__choose-item")
@@ -55,6 +56,7 @@ const calculator = () => {
     ) {
       changeValueWithDataAttr(genderWrapper, t, "data-gender", personData);
     }
+    
     calculateTotal(personData);
   });
 

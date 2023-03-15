@@ -1,8 +1,9 @@
 import {
-  getData,
   removeClassFromArr,
   addClassToTarget,
-} from "./additionalFunctions.js";
+} from "../utils/helpers/helpers.js";
+import { getData } from "../utils/services/services.js";
+
 const cards = () => {
   class CardItem {
     constructor(img, alt, title, description, price, active, parentSelector) {
@@ -48,7 +49,7 @@ const cards = () => {
     }
   });
 
-  getData("http://localhost:3000/menu").then((data) => {
+  getData().then((data) => {
     createNewInstanceCardItem(data, ".menu > .menu__field > .container");
   });
 

@@ -1,4 +1,4 @@
-import { getZero } from "./additionalFunctions.js";
+import { getZero } from "../utils/helpers/helpers.js";;
 
 const timer = (date) => {
   const finishTime = date;

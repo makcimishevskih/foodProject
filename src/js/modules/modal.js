@@ -1,5 +1,7 @@
-function openModal(modal, timerId) {
-  clearTimeout(timerId);
+function openModal(modal, timerId = null) {
+  if (timerId) {
+    clearTimeout(timerId);
+  }
 
   modal.classList.add("show");
 
@@ -18,7 +20,7 @@ function closeModal(modal) {
 const modal = () => {
   const modal = document.querySelector(".modal");
   const html = document.documentElement;
-  let timerId = setTimeout(openModal, 500000);
+  let timerId = setTimeout(() => openModal(modal, timerId), 300000);
 
   function connectWithUs(e, className) {
     const t = e.target;

@@ -26,7 +26,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   timer("2023-06-04");
   form();
-  modal();
+  // modal();
   cards();
   slider();
   preview();
